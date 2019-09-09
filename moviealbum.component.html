@@ -1,0 +1,14 @@
+<input type="text" placeholder="seach for movies" [(ngModel)]="search" style="background-color:lightgreen ">
+<button (click)="album()"  style="background-color:lightgreen ">Add Movie</button>
+<table>
+    <tr>
+        <th>movie Name</th>
+        <th>Language</th>
+        <th>Genre</th>
+    </tr>
+    <tr *ngFor='let a of list | filter:search; let i=index'>
+        <td>{{a.MovieName}}</td>
+        <td>{{a.Language}}</td>
+<td>{{a.Genre}}</td>
+    </tr>
+</table>

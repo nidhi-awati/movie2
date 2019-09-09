@@ -1,0 +1,15 @@
+<body>
+    <form [formGroup]="registerForm">
+    <p>UserName: </p>
+    <input type="text"  formControlName="name" placeholder="enter user name"/>
+    <p>Password:</p>
+    <input type="password"  formControlName="pass" placeholder="enter password"/>
+    <p>Conform Password:</p>
+    <input type="password" id="as" formControlName="cpass" placeholder="enter confirm password"><br><br>
+    <button (click)="register(registerForm.value)">Add User</button>
+    <p id="a">Already have an account?<u (click)="log()" id="b">login</u></p>
+</form>
+</body>
+
+
+

@@ -1,0 +1,12 @@
+<body>
+<form [formGroup]="movie">
+    <p>Movie Name </p>
+    <input type="text" id="a" formControlName="name" placeholder="enter movie name">
+    <p>Language </p>
+    <input type="text"   id="a" formControlName="lang" placeholder="enter language">
+    <p>Genre</p>
+    <input type="text"   id="a" formControlName="gen" placeholder="enter genre"><br><br>
+    <button (click)="move(movie.value)">Add User</button>
+<button (click)="list()">movielist</button>
+</form>
+</body>
